@@ -1,17 +1,10 @@
 {
-  "name": "n8n-monorepo",
-  "version": "1.99.0",
-  "private": true,
-  "engines": {
-    "node": ">=22.16",
-    "pnpm": ">=10.2.1"
-  },
-  "packageManager": "pnpm@10.12.1",
+  "name": "n8n",
+  "version": "0.231.0",
   "scripts": {
-    "prepare": "node scripts/prepare.mjs",
-    "preinstall": "node scripts/block-npm-install.js",
-    "build": "turbo run build",
-    "start": "run-script-os",
-    "start:default": "cd packages/cli/bin && ./n8n"
+    "start": "n8n"
+  },
+  "dependencies": {
+    "n8n": "^0.231.0"
   }
 }
